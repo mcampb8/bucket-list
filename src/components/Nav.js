@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Nav() {
+export default function Nav(props) {
     const linkStyle = { border: '1px black', padding: '5px' };
 
     return (
@@ -18,26 +18,26 @@ export default function Nav() {
                     <a href="#">Michael Campbell</a>
                 </div>
 
-                <div style={linkStyle}>
-                    <button>
-                        <a href="#">About Me</a>
+                <div class = {props.currentPage === "about-me" && "active"} style={linkStyle}>
+                    <button onClick={()=> props.changePage("about-me")}>
+                        About Me
                     </button>
                 </div>
-                <div style={linkStyle}>
-                    <button>
-                        <a href="#">Portfolio</a>
-                    </button>
-                </div>
-
-                <div style={linkStyle}>
-                    <button>
-                        <a href="#">Contact</a>
+                <div class = {props.currentPage === "portfolio" && "active"}style={linkStyle}>
+                    <button onClick = {()=> props.changePage("portfolio")}>
+                        Portfolio
                     </button>
                 </div>
 
-                <div style={linkStyle}>
-                    <button>
-                        <a href="#">Resume</a>
+                <div class = {props.currentPage === "contact" && "active"}style={linkStyle}>
+                    <button onClick = {()=> props.changePage("contact")}>
+                        Contact
+                    </button>
+                </div>
+
+                <div class = {props.currentPage === "resume" && "active"}style={linkStyle}>
+                    <button onClick={()=> props.changePage("resume")}>
+                        Resume
                     </button>
                 </div>
           

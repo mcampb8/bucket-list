@@ -6,16 +6,29 @@ import Contact from './Contact'
 import Resume from './Resume'
 
 export default function Main() {
+    const [currentPage, setCurrentPage] = useState("about-me");
+    
+    const renderPage = ()=>{
+        if(currentPage === "about-me"){
+            return <AboutMe/>
+        } else if(currentPage === "portfolio"){
+            return <Portfolio/>
+        } else if (currentPage === "contact"){
+            return <Contact/>
+        } else if (currentPage === "resume"){
+            return <Resume/>
+        }
+    }
     return (
         <div>
             <header >
-                <Nav/>
+                <Nav 
+                changePage={setCurrentPage} 
+                currentPage = {currentPage}
+                />
             </header>
             <section>
-                <AboutMe/>
-                <Portfolio/>
-                <Contact/>
-                <Resume/>
+               {renderPage()}
 
             </section>
     
