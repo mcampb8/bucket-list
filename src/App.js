@@ -6,7 +6,7 @@ import Main from "./components/Main";
 
 export default function App(){
   return (
-  <div>
+  <div class = "app">
     <Main/>
   </div>
   )

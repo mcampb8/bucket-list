@@ -14,29 +14,25 @@ export default function Nav(props) {
                     justifyContent: 'flex-start',
                 }}
             >
-                <div style={linkStyle}>
-                    <a href="#">Michael Campbell</a>
-                </div>
-
                 <div class = {props.currentPage === "about-me" && "active"} style={linkStyle}>
-                    <button onClick={()=> props.changePage("about-me")}>
+                    <button class = "btn btn-primary" onClick={()=> props.changePage("about-me")}>
                         About Me
                     </button>
                 </div>
                 <div class = {props.currentPage === "portfolio" && "active"}style={linkStyle}>
-                    <button onClick = {()=> props.changePage("portfolio")}>
+                    <button class = "btn btn-primary" onClick = {()=> props.changePage("portfolio")}>
                         Portfolio
                     </button>
                 </div>
 
                 <div class = {props.currentPage === "contact" && "active"}style={linkStyle}>
-                    <button onClick = {()=> props.changePage("contact")}>
+                    <button class = "btn btn-primary" onClick = {()=> props.changePage("contact")}>
                         Contact
                     </button>
                 </div>
 
                 <div class = {props.currentPage === "resume" && "active"}style={linkStyle}>
-                    <button onClick={()=> props.changePage("resume")}>
+                    <button class = "btn btn-primary" onClick={()=> props.changePage("resume")}>
                         Resume
                     </button>
                 </div>

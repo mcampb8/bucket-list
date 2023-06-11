@@ -32,7 +32,7 @@ export default function Main() {
 
             </section>
     
-            <footer>
+            <footer class = "footer">
                 <a href = "github.com/mcampb8">My Github </a>
                 <a href = "linkedin.com/mcampb8">My LinkedIn</a>
                 <a href = "goggle.com">My Social Media</a>

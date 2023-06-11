@@ -48,7 +48,7 @@ export default function Contact() {
         {
           errorMessage
         }
-        <form>
+        {/* <form>
             <label>
                 Name
             <input onBlur={handleBlur} name="name" required type = "text"/>
@@ -61,7 +61,23 @@ export default function Contact() {
                 Message
             <input onBlur={handleBlur} name="message"required type = "text"/>
             </label>
-        </form>
+        </form> */}
+        <form>
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input onBlur={handleBlur} name ="name"type="text" class="form-control" id="Name" placeholder="Name"/>
+  </div>
+  <div class="form-group">
+    <label >Email address</label>
+    <input onBlur={handleBlur} name ="email"type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Message</label>
+    <input onBlur={handleBlur} name ="message"type="text" class="form-control" id="Message" placeholder="Message"/>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
         </>
     )
 }
