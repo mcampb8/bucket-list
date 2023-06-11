@@ -1,6 +1,6 @@
 {
-  "name": "bucket-list",
-  "homepage": "https://mcampb8.github.io/bucket-list",
+  "name": "react-portfolio",
+  "homepage": "https://mcampb8.github.io/bket-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
