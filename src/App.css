@@ -5,12 +5,6 @@
   height: 40vmin;
   pointer-events: none;
 }
-.portfolio{
-  display: flex;
-  min-width: 100vh;
-  min-height: 100vh;
-  flex-direction: column;
-}
 .header{
   justify-content: center;
 }
@@ -35,23 +29,54 @@
   color: #61dafb;
 }
 .active {
-  background-color: #29D6BD
+  background-color: #2999D6
 }
 .main-header-menu{
   background-color: #2942D6
 }
 .btn-primary{
-  background-color: #2999D6 !important;
+  background-color: #29D6BD !important;
 }
 .header{
  text-align: center;
+ background-color: #2942D6;
+ color: #2999D6
 }
-.footer{
-  display:flex;
+.card-body{
+  text-align: center;
+  background-color: #2999D6;
+  border: solid;
+  border-color: white;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
-  position:absolute;
-  bottom:0;
-  height: 2.5 rem;
+  background-color: #2999D6 !important;
+}
+
+.about-me img{
+  max-width: 50vh;
+  max-height: 50vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer {
+  margin-top: auto;
+}
+.footer>a{
+  margin:5px;
+}
+.badge{
+  background-color:  #29D6BD !important;
+}
+.resume{
+  display:flex;
+  max-width: 175px;
 }
 @keyframes App-logo-spin {
   from {

@@ -4,8 +4,11 @@ export default function AboutMe() {
     const linkStyle = { border: '1px black', padding: '5px' };
     return (
         <>
-        <img src = "http://placekitten.com/200/300"></img>
-        <p>This is my bio.</p>
+        <section class = "about-me">
+        <img src = {require("/Users/michaelcampbell/code/react-portfolio/src/Headshot.jpeg")}></img>
+        <h2> Here is my Biography:</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
         </>
     )
 }

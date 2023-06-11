@@ -21,21 +21,21 @@ export default function Main() {
     }
     return (
         <div>
-            <header >
+            <header class = "bar">
                 <Nav 
                 changePage={setCurrentPage} 
                 currentPage = {currentPage}
                 />
             </header>
-            <section>
+            <body>
+            <h1 class = "header">Michael Campbell</h1>
                {renderPage()}
-
-            </section>
+            </body>
     
             <footer class = "footer">
-                <a href = "github.com/mcampb8">My Github </a>
-                <a href = "linkedin.com/mcampb8">My LinkedIn</a>
-                <a href = "goggle.com">My Social Media</a>
+                <a href = "https://github.com/mcampb8" class = "badge badge-primary" >My Github </a>
+                <a href = "https://linkedin.com/in/micampbell51" class = "badge badge-primary" >My LinkedIn</a>
+                <a href = "https://instagram.com/themichaelinguide" class = "badge badge-primary" >My Social Media</a>
             </footer>
         </div>
     )

@@ -1,44 +1,41 @@
 import React from 'react';
 
 export default function Portfolio() {
-    const linkStyle = { border: '1px black', padding: '5px' };
+    // const linkStyle = { border: '1px black', padding: '5px' };
     return (
         <>
-        <section class = "header">
-            <h1>Michael Campbell</h1>
-        </section>
-        <section class ="portfolio">
-        <section>
-        <h1>Project 1</h1>
-        <a href = "https://github.com/mcampb8/employee-tracker">Employee Tracker App</a>
-        <a href = "https://github.com/mcampb8/employee-tracker">Employee Tracker App Deployed</a>
-        </section>
-        <section>
-        <h1>Project 2</h1>
-        <a href = "https://github.com/mcampb8/note-taker">Note Taker App</a>
-        <a href = "https://note-taker1.herokuapp.com/">Note Taker App Deployed</a>
-        </section>
-        <section>
-        <h1>Project 3</h1>
-        <a href = "github.com/mcampb8">Project 3 Github</a>
-        <a href = "herokuapp.com">Project 3 Deployed</a>
-        </section>
-        <section>
-        <h1>Project 4</h1>
-        <a href = "github.com/mcampb8">Project 4 Github</a>
-        <a href = "herokuapp.com">Project 4 Deployed</a>
-        </section>
-        <section>
-        <h1>Project 5</h1>
-        <a href = "github.com/mcampb8">Project 5 Github</a>
-        <a href = "herokuapp.com">Project 5 Deployed</a>
-        </section>
-        <section>
-        <h1>Project 6</h1>
-        <a href = "github.com/mcampb8">Project 6 Github</a>
-        <a href = "herokuapp.com">Project 6 Deployed</a>
-        </section>
-        </section>
+        <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Employee Tracker App</h5>
+    <a href="https://github.com/mcampb8/employee-tracker" class="btn btn-primary card-link">Github link</a>
+    <a href="https://github.com/mcampb8/employee-tracker" class="btn btn-primary card-link">Deployed Link </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Social Network API</h5>
+    <a href="https://github.com/mcampb8/social-network" class="btn btn-primary card-link">Github Link: </a>
+    <a href="https://github.com/mcampb8/social-network" class="btn btn-primary card-link">Deployed Link: </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">E-Commerce Application</h5>
+    <a href="https://github.com/mcampb8/e-commerce" class="btn btn-primary card-link">Github Link:</a>
+    <a href="https://github.com/mcampb8/e-commerce" class="btn btn-primary card-link">Deployed Link: </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Note Taker App</h5>
+    <a href="https://github.com/mcampb8/note-taker" class="btn btn-primary card-link">Github Link:</a>
+    <a href="https://note-taker1.herokuapp.com/" class="btn btn-primary card-link">Deployed Link: </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Team Profile Generator</h5>
+    <a href="https://github.com/mcampb8/Team-Profile-Generator" class="btn btn-primary card-link">Github Link:</a>
+    <a href="https://github.com/mcampb8/Team-Profile-Generator" class="btn btn-primary card-link">Deployed Link: </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Read Me Generator</h5>
+    <a href="https://github.com/mcampb8/read-me-generator" class="btn btn-primary card-link">Github Link:</a>
+    <a href="https://github.com/mcampb8/read-me-generator" class="btn btn-primary card-link">Deployed Link: </a>
+  </div>
+</div>
       
         </>
     )
