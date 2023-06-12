@@ -6,9 +6,10 @@ export default function Portfolio() {
         <>
         <div class="card">
   <div class="card-body">
-    <h5 class="card-title">Employee Tracker App</h5>
-    <a href="https://github.com/mcampb8/employee-tracker" class="btn btn-primary card-link">Github link</a>
-    <a href="https://github.com/mcampb8/employee-tracker" class="btn btn-primary card-link">Deployed Link </a>
+    <h5 class="card-title">Traderz Post APP</h5>
+    <a href="https://github.com/Willlasbury/project-3-front" class="btn btn-primary card-link">Github Front End link</a>
+    <a href="https://github.com/Willlasbury/project-3-back" class="btn btn-primary card-link">Github Back End link</a>
+    <a href="https://traderz-post.netlify.app/login" class="btn btn-primary card-link">Deployed Link </a>
   </div>
   <div class="card-body">
     <h5 class="card-title">Social Network API</h5>
